@@ -6,10 +6,5 @@ echo [$(date)]: "activate environment"
 source activate ./env
 echo [$(date)]: "install requirements"
 pip install -r requirements.txt
-# echo [$(date)]: "export conda environment"
-# conda env export > conda.yaml
 echo [$(date)]: "create an src/utils directory and files"
-mkdir -p src/utils && touch src/__init__.py src/main.py
-
-# to remove everything -
-# rm -rf env/ .gitignore conda.yaml README.md .git/
+mkdir -p src && touch src/__init__.py src/main.py
